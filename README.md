@@ -1,32 +1,17 @@
-# Análise de Cancelamento de Clientes (Churn)
+# Análise de Cancelamento de Clientes 📊
 
-Projeto desenvolvido durante a **Jornada Python da Hashtag Treinamentos** para analisar os motivos do cancelamento de clientes em uma empresa e encontrar soluções para reduzir essa taxa.
+Projeto desenvolvido com base nas aulas da **Jornada Python da Hashtag Treinamentos**, com o objetivo de analisar dados de clientes, identificar os principais motivos de cancelamento (churn) e gerar visualizações interativas.
 
-## 🛠️ Tecnologias usadas
+## 🛠️ Tecnologias Utilizadas
+* **Python**
+* **Pandas** (para tratamento e limpeza dos dados)
+* **Plotly** (para geração de gráficos interativos)
+* **Jupyter Notebook** (no VSCode)
 
-- **Python**
-- **Pandas** (tratamento e análise dos dados)
-- **Plotly** (geração dos gráficos interativos)
-
-## 📌 Passo a passo do projeto
-
-1. **Importação dos dados:** Leitura da base de dados em arquivo CSV.
-2. **Limpeza dos dados:** Remoção da coluna de ID (que não ajuda na análise) e exclusão de linhas com informações vazias (`dropna`).
-3. **Análise inicial:** Verificação da taxa geral de cancelamento (mais de 50% dos clientes cancelaram).
-4. **Análise de causas e gráficos:** Criação de histogramas para comparar cada coluna com os cancelamentos e identificar os principais problemas.
-
-## 💡 Principais descobertas e soluções
-
-Analisando os dados e gráficos, identifiquei três pontos críticos:
-
-1. **Contrato Mensal:** Praticamente todos os clientes do plano mensal cancelam. 
-   - *Solução:* Oferecer descontos para migrarem para os planos trimestral ou anual.
-2. **Ligações pro Call Center:** Clientes que ligam mais de 4 vezes para o suporte cancelam o serviço.
-   - *Solução:* Melhorar o atendimento para resolver o problema do cliente em até 3 ligações.
-3. **Dias de Atraso:** Clientes com mais de 20 dias de atraso cancelam a assinatura.
-   - *Solução:* Criar um sistema de alerta/cobrança antes de fechar os 20 dias de atraso.
+## 🚀 O que o projeto faz?
+1. **Importação e Limpeza:** Lê um arquivo CSV com dados de clientes, remove colunas desnecessárias (como IDs) e elimina linhas com valores vazios (`dropna`).
+2. **Análise Exploratória:** Calcula a taxa global de cancelamento da base.
+3. **Geração de Gráficos:** Cria histogramas comparando todas as variáveis da base com a coluna de cancelamento para entender o comportamento dos clientes.
 
 ---
-
-**Autor:** Tales
-
+Feito por Tales Paulo como parte dos meus estudos em Análise de Dados e Desenvolvimento de Sistemas.
